@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfv-6t-bbd">
+                                <rect key="frame" x="97.5" y="120" width="180" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Je1-78-mXs"/>
+                                    <constraint firstAttribute="height" constant="40" id="n77-ty-8ru"/>
+                                </constraints>
+                                <state key="normal" title="选择拍照或者相册"/>
+                                <connections>
+                                    <action selector="actionSheetSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WWo-E4-eOv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ok3-wV-MLX">
+                                <rect key="frame" x="97" y="260" width="180" height="40"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v6p-mL-8N2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOe-hm-gyh">
+                                <rect key="frame" x="97" y="400" width="180" height="40"/>
+                                <state key="normal" title="相册"/>
+                                <connections>
+                                    <action selector="goPhotoLib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="poI-25-fLy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ok3-wV-MLX" firstAttribute="centerX" secondItem="yfv-6t-bbd" secondAttribute="centerX" id="6Yw-ra-UgL"/>
+                            <constraint firstItem="wOe-hm-gyh" firstAttribute="top" secondItem="ok3-wV-MLX" secondAttribute="bottom" constant="100" id="6h0-61-Ve4"/>
+                            <constraint firstItem="ok3-wV-MLX" firstAttribute="width" secondItem="yfv-6t-bbd" secondAttribute="width" id="8CC-N2-SfQ"/>
+                            <constraint firstItem="ok3-wV-MLX" firstAttribute="top" secondItem="yfv-6t-bbd" secondAttribute="bottom" constant="100" id="Bv4-ap-hhH"/>
+                            <constraint firstItem="ok3-wV-MLX" firstAttribute="height" secondItem="yfv-6t-bbd" secondAttribute="height" id="Ec1-z2-WTg"/>
+                            <constraint firstItem="wOe-hm-gyh" firstAttribute="height" secondItem="ok3-wV-MLX" secondAttribute="height" id="Efj-Ew-RHM"/>
+                            <constraint firstItem="wOe-hm-gyh" firstAttribute="centerX" secondItem="ok3-wV-MLX" secondAttribute="centerX" id="FAm-1n-nAN"/>
+                            <constraint firstItem="yfv-6t-bbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Osm-pw-RWZ"/>
+                            <constraint firstItem="wOe-hm-gyh" firstAttribute="width" secondItem="ok3-wV-MLX" secondAttribute="width" id="Qtz-Ve-8sb"/>
+                            <constraint firstItem="yfv-6t-bbd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="RDF-KS-msA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
