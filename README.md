@@ -1,0 +1,2 @@
+# JJImagePickerManager
+JJImagePickerManager
