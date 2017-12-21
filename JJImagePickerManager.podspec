@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary      = "A image picker manager"
 
   s.homepage     = "https://github.com/washBird/JJImagePickerManager"
-  s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE"}
   s.author       = { "zoujie" => "http://www.jianshu.com/u/53c30d50712c" }
   s.platform     = :ios, "10.0"
 

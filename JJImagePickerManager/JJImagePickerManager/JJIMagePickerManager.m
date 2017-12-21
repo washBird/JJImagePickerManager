@@ -95,12 +95,7 @@
         UIAlertAction *actionOpen = [UIAlertAction actionWithTitle:@"去开启" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
             UIApplication *application = [UIApplication sharedApplication];
-            if ([application respondsToSelector:@selector(openURL:options:completionHandler:)]) {
-                [application openURL:url options:@{} completionHandler:nil];
-            }
-            else{
-                [application openURL:url];
-            }
+            [application openURL:url];
             [weakSelf imagePickerControllerDidCancel:picker];
         }];
         [alertCtr addAction:actionKnown];
