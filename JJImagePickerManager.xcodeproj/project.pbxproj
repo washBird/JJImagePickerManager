@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84973DE81FEB7E9D00539553 /* JJIMagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84973DE71FEB7E9D00539553 /* JJIMagePickerManager.m */; };
 		84F5DA451F18A49D00E1E7E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5DA441F18A49D00E1E7E1 /* main.m */; };
 		84F5DA481F18A49D00E1E7E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5DA471F18A49D00E1E7E1 /* AppDelegate.m */; };
 		84F5DA4B1F18A49D00E1E7E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5DA4A1F18A49D00E1E7E1 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		84F5DA531F18A49D00E1E7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F5DA511F18A49D00E1E7E1 /* LaunchScreen.storyboard */; };
 		84F5DA5E1F18A49E00E1E7E1 /* JJImagePickerManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5DA5D1F18A49E00E1E7E1 /* JJImagePickerManagerTests.m */; };
 		84F5DA691F18A49E00E1E7E1 /* JJImagePickerManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5DA681F18A49E00E1E7E1 /* JJImagePickerManagerUITests.m */; };
-		84F5DA781F18A4BC00E1E7E1 /* JJIMagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F5DA771F18A4BC00E1E7E1 /* JJIMagePickerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84973DE61FEB7E9D00539553 /* JJIMagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJIMagePickerManager.h; sourceTree = "<group>"; };
+		84973DE71FEB7E9D00539553 /* JJIMagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJIMagePickerManager.m; sourceTree = "<group>"; };
 		84F5DA401F18A49D00E1E7E1 /* JJImagePickerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJImagePickerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F5DA441F18A49D00E1E7E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84F5DA461F18A49D00E1E7E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		84F5DA641F18A49E00E1E7E1 /* JJImagePickerManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJImagePickerManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F5DA681F18A49E00E1E7E1 /* JJImagePickerManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJImagePickerManagerUITests.m; sourceTree = "<group>"; };
 		84F5DA6A1F18A49E00E1E7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84F5DA761F18A4BC00E1E7E1 /* JJIMagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJIMagePickerManager.h; sourceTree = "<group>"; };
-		84F5DA771F18A4BC00E1E7E1 /* JJIMagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJIMagePickerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84973DE51FEB7E9D00539553 /* JJImagePickerManager */ = {
+			isa = PBXGroup;
+			children = (
+				84973DE61FEB7E9D00539553 /* JJIMagePickerManager.h */,
+				84973DE71FEB7E9D00539553 /* JJIMagePickerManager.m */,
+			);
+			path = JJImagePickerManager;
+			sourceTree = "<group>";
+		};
 		84F5DA371F18A49D00E1E7E1 = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +113,11 @@
 		84F5DA421F18A49D00E1E7E1 /* JJImagePickerManager */ = {
 			isa = PBXGroup;
 			children = (
+				84973DE51FEB7E9D00539553 /* JJImagePickerManager */,
 				84F5DA461F18A49D00E1E7E1 /* AppDelegate.h */,
 				84F5DA471F18A49D00E1E7E1 /* AppDelegate.m */,
 				84F5DA491F18A49D00E1E7E1 /* ViewController.h */,
 				84F5DA4A1F18A49D00E1E7E1 /* ViewController.m */,
-				84F5DA761F18A4BC00E1E7E1 /* JJIMagePickerManager.h */,
-				84F5DA771F18A4BC00E1E7E1 /* JJIMagePickerManager.m */,
 				84F5DA4C1F18A49D00E1E7E1 /* Main.storyboard */,
 				84F5DA4F1F18A49D00E1E7E1 /* Assets.xcassets */,
 				84F5DA511F18A49D00E1E7E1 /* LaunchScreen.storyboard */,
@@ -282,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F5DA4B1F18A49D00E1E7E1 /* ViewController.m in Sources */,
-				84F5DA781F18A4BC00E1E7E1 /* JJIMagePickerManager.m in Sources */,
+				84973DE81FEB7E9D00539553 /* JJIMagePickerManager.m in Sources */,
 				84F5DA481F18A49D00E1E7E1 /* AppDelegate.m in Sources */,
 				84F5DA451F18A49D00E1E7E1 /* main.m in Sources */,
 			);
@@ -526,6 +534,7 @@
 				84F5DA6F1F18A49E00E1E7E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F5DA701F18A49E00E1E7E1 /* Build configuration list for PBXNativeTarget "JJImagePickerManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +543,7 @@
 				84F5DA721F18A49E00E1E7E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F5DA731F18A49E00E1E7E1 /* Build configuration list for PBXNativeTarget "JJImagePickerManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +552,7 @@
 				84F5DA751F18A49E00E1E7E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
